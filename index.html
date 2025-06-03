@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>My WebIO - Home</title>
+        <link rel="stylesheet" href="css/my_style.css">
+        <style type="text/css">
+            #title
+            {
+                text-decoration-line: underline;
+                text-decoration-color: rgb(51, 51, 240);
+                font-size: 75px;
+                margin-bottom: 0px;
+                color: white;
+            }
+            #sub_title
+            {
+                margin-top: 0px;
+                font-size: 17px;
+            }
+            #label_lang
+            {
+                text-align: right;
+                font-size: 17px
+            }
+        </style>
+        <link rel="icon" type="image/x-icon" href="imgs/MyIO.png">
+    </head>
+    
+    <body>  
+        <header>
+            <div class="top_bar">
+                <h1 id = "title">My WebIO</h1>
+            </div>
+            
+            <div class="top_bar">
+                <h3 id = "sub_title">Simone Giorgini 5CM</h3>
+                <h3>
+                    <nav>
+                        <ul>
+                            <li><a href ="index.html" id="href_home">Home</a></li>
+                            <li><a href ="pcto.html" id="href_pcto">PCTO</a></li>
+                            <li><a href ="civic.html" id="href_civic">Educazione Civica</a></li>
+                            <li><a href ="projects.html" id="href_projects">Progetti</a></li>
+                        </ul>
+                    </nav>
+                </h3>
+            </div>
+        </header>
+
+        <script>
+            window.onload = function()
+            {
+                const aux = document.getElementById("href_home");
+                aux.style.backgroundColor = "rgb(23, 73, 188)";
+                aux.style.borderRadius = "50px";
+            };
+        </script>
+        
+        <main>
+            <section class="frame">
+                <section class="content-section">
+                    <p>
+                        <h1 id="me">Chi sono?</h1>
+                        Mi chiamo Simone Giorgini e frequento la 5CM dell'Istituto IIS Marconi Pieralisi di Jesi.<br>
+
+                        <br>
+                        <br>
+                        <h2 id="hobby">Hobby</h2>
+                        Nel tempo libero mi dedico a 2 attività principali: videogiochi e attività fisica, se pur posso sembrare un ossimero, mi ci trovo molto bene con l'altersi dell due passioni.
+                        <br>
+                        Già da diverso tempo mi dedico parecchio alla bicicletta, soprattutto negli ultimi anni mi sono divertito ad alzare l'asticella proponendomi sempre sfide per aumentare la distanza e la difficoltà del percorso.
+                        Per quanto mi riguarda è un fantastico mezzo di trasporto che mi permette di andare in giro e vedere luoghi già visti ma con occhi nuovi.<br>
+                        <br>
+                        <br>
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <p>
+                        <h2>Progetti & Attività</h2>
+                        Durante quest'ultimo anno scolastico ho partecipato a diversi corsi e progetti extrascolastici che mi hanno permesso di ampliare il mio bagaglio di conoscenze.
+                        <br>
+                        Sono riuscito a prendere anche parte, inseieme ad altri sette studenti della mia scuola, ad un evento Hackathon organizzato dalla scuola <a href="https://www.iisve.it/">Volterra Elia</a> di Torrette classificandoci terzi.
+                        <br>
+                        La sfida prevedeva di trovare una soluzione alternativa all'attuale gestione dell'assegnazione delle Azienda per i PCTO e per cercare lavoro in maniera più semplice.
+                        <br>
+                        <br>
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <p>
+                        <h1>Per aspera ad astra</h1>
+                        Se pur con qualche difficoltà, non mi sono mai pentito dell'indirizzo di studi scelto,
+                        so che è la strada giusta per me.
+                        <br>
+                        Per via del progetto <a href="">Erasmus Pro Tech4Chain</a> dovrò saltare un anno di studi, ma ho comunque intenzione di continuare in ambito informatico.<br>
+                        Non ho ancora decisono esattemente il corso e l'università da frequentare, i papabili sono: 
+                        <ul>
+                            <li>Università Politecnica delle Marche - <a href="https://www.univpm.it/Entra/Offerta_formativa_1/Offerta_formativa_2/Corso_di_laurea_triennale_in_Ingegneria_Informatica_e_dellAutomazione_1">Ing. Informatica e dell'Automazione</a></li>
+                            <li>Università Politecnica delle Marche - <a href="https://www.univpm.it/Entra/Offerta_formativa_1/Offerta_formativa_2/Corso_di_laurea_triennale_in_Ingegneria_dell_informazione_per_videogame_e_realta_virtuale">Ing. per Videogame e Realtà virtuale</a></li>
+                            <li>Università di Camerino - <a href="">Informatica</a></li>
+                        </ul>
+                        <br>
+                        <br>
+                    </p>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

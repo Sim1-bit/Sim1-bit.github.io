@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>My WebIO - Civic</title>
+        <link rel="stylesheet" href="css/my_style.css">
+        <style type="text/css">
+            #title
+            {
+                text-decoration-line: underline;
+                text-decoration-color: rgb(51, 51, 240);
+                font-size: 75px;
+                margin-bottom: 0px;
+                color: white;
+            }
+            #sub_title
+            {
+                margin-top: 0px;
+                font-size: 17px;
+            }
+            #label_lang
+            {
+                text-align: right;
+                font-size: 17px
+            }
+        </style>
+        <link rel="icon" type="image/x-icon" href="imgs/MyIO.png">
+    </head>
+    
+    <body>  
+        <header>
+            <div class="top_bar">
+                <h1 id = "title">My WebIO</h1>
+            </div>
+            
+            <div class="top_bar">
+                <h3 id = "sub_title">Simone Giorgini 5CM</h3>
+                <h3>
+                    <nav>
+                        <ul>
+                            <li><a href ="index.html" id="href_home">Home</a></li>
+                            <li><a href ="pcto.html" id="href_pcto">PCTO</a></li>
+                            <li><a href ="civic.html" id="href_civic">Educazione Civica</a></li>
+                            <li><a href ="projects.html" id="href_projects">Progetti</a></li>
+                        </ul>
+                    </nav>
+                </h3>
+            </div>
+        </header>
+
+        <script>
+            window.onload = function()
+            {
+                const aux = document.getElementById("href_civic");
+                aux.style.backgroundColor = "rgb(23, 73, 188)";
+                aux.style.borderRadius = "50px";
+            };
+        </script>
+
+        <main>
+            <section class="frame">
+                <section class="content-section">
+                    <p>
+                        <h1>Introduzione</h1>
+                        Durante lo svolgimento dell'anno scolastico sono state dedicate delle ore per la materia Educazione Civica,
+                        l'argomento principale è stato l'uso delle nuove tecnologie, come l'Intelligenza Artificiale, per campagne propagandistiche con lo scopo di creare un nemico.
+                        <br>
+                        Il titolo dell'UDA è: "<b>IO NON PARTECIPO ALLA GUERRA, È LA GUERRA CHE PARTECIPA A ME</b>", frase tratta dallo scrittore <i>Yurij Levitanskij</i>.
+                        <br>
+                        <br>
+                        <h2>Cosa abbiamo imparato?</h2>
+                        Nelle ore dedicato abbiamo trattato degli Hate Speech (discorsi odio) e di come venissero usati manifesti per far passare un messaggio politico con lo scopo di creare un nemico.
+                        <br>
+                        Abbiamo imparato che il fenomeno non si è fermato, anzi, si è amplificato grazie alle alle nuove tecnologie che permettono una più grande diffusione, ciò ha permesso di spostare il focus delle guerre.
+                        <br>
+                        Non solo fatte con le armi, ma anche con attacchi hacker per disturbare e rendere inefficaci i servizzi pubblici o militari dello stato nemico.
+                        <br>
+                        <br>
+                    </p>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>
