@@ -14,11 +14,18 @@ header
     color: white;
     text-align: left;
     padding: 20px;
+    padding-top: 0px;
     padding-bottom: 0;
     font-size: 28px;
     font-weight: bold;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     width: 97.873%;
+    height: 25%;
+    transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Per stare sopra altri elementi */
 }
 
 label
@@ -78,11 +85,10 @@ a:hover
     border-radius: 5px;
 }
 
-/*main 
+main 
 {
-    padding: 20px 10%;
-    background-color: #ffffff;
-}*/
+    padding-top: 50px;
+}
 
 .top_bar
 {
