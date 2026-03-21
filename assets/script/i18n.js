@@ -1,27 +1,31 @@
 let translations = {};
 
-const components = ["header"];
+const components = ["header", "skills"];
 
 
 async function loadLanguage(lang) {
-    translations = {};
-    for(const comp of components){
-        const res = await fetch(`assets/data/${lang}/${comp}.json`);
-        const data = await res.json();
+  translations = {};
+  for(const comp of components){
+      const res = await fetch(`assets/data/${lang}/${comp}.json`);
+      const data = await res.json();
 
-        translations[comp] = data;
-    }
-    applyTranslations();
+      translations[comp] = data;
+  }
+
+  applyTranslations();
 }
 
 
 function applyTranslations() {
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    const [comp, key] = el.dataset.i18n.split(".");
+  document.querySelectorAll("[data-i18n]").forEach(element => {
+    const path = element.dataset.i18n.split(".");
 
-    if (translations[comp] && translations[comp][key]) {
-      el.innerText = translations[comp][key];
-    }
+    const translation = path.reduce((base, key) => {
+      return (base && base[key] !== undefined) ? base[key] : undefined;
+    }, translations);
+
+    if(translation !== undefined && typeof translation === 'string')
+      element.innerText = translation;
   });
 }
 

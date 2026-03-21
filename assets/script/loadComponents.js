@@ -1,7 +1,10 @@
 async function loadAllComponents() {
   await loadComponent("header", "assets/components/header.html");
+  await loadComponent("skills", "assets/components/skills.html");
 
-  applyTranslations();
+  await createPage();
+
+  await applyTranslations();
 }
 
 async function loadComponent(id, file) {
