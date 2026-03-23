@@ -1,6 +1,6 @@
 let translations = {};
 
-const components = ["header", "skills"];
+const components = ["header", "skills", "work-experiences", "degrees"];
 
 
 async function loadLanguage(lang) {
@@ -11,8 +11,6 @@ async function loadLanguage(lang) {
 
       translations[comp] = data;
   }
-
-  applyTranslations();
 }
 
 

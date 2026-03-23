@@ -1,4 +1,16 @@
 {
     "title" : "Esperienze di lavoro",
-    "summary" : "Riassunto veloce"
+    "jobs" :
+    [
+        {
+            "enterprise" : "FENLES",
+            "role" : "Full Stack Developer, Tecnico del suono",
+            "summary" : "Riassunto/descrizione"
+        },
+        {
+            "enterprise" : "Plus Service",
+            "role" : "Sistemista di Rete",
+            "summary" : "Riassunto/descrizione"
+        }
+    ]  
 }

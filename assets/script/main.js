@@ -1,14 +1,20 @@
 async function createPage() {
     await createHardSkillsList();
     await createSoftSkillsList();
+
+    await createJobsList();
+
+    await createDegreesList();
 }
 
 async function createHardSkillsList(){
-    const res = await fetch(`assets/data/it/skills.json`);
-    const data = await res.json();
-    const hard_skill_categories = data["hard-skills"]["categories"];
 
-    const html = hard_skill_categories.map((category, index) => {
+    const list = document.getElementById("list-hard");
+    if(!list) return;
+
+    const data = translations['skills']["hard-skills"]["categories"];
+
+    const html = data.map((category, index) => {
 
         return `
         <div>
@@ -20,16 +26,17 @@ async function createHardSkillsList(){
 
     }).join('');
 
-    const hard_list = document.getElementById("list-hard");
-    hard_list.innerHTML = html;
+    list.innerHTML = html;
 }
 
 async function createSoftSkillsList(){
-    const res = await fetch(`assets/data/it/skills.json`);
-    const data = await res.json();
-    const soft_skill_categories = data["soft-skills"]["categories"];
 
-    const html = soft_skill_categories.map((category, index) => {
+    const list = document.getElementById("list-soft");
+    if(!list) return;
+
+    const data = translations['skills']["soft-skills"]["categories"];
+
+    const html = data.map((category, index) => {
 
         return `
         <div>
@@ -43,6 +50,50 @@ async function createSoftSkillsList(){
 
     }).join('');
 
-    const soft_list = document.getElementById("list-soft");
-    soft_list.innerHTML = html;
+    list.innerHTML = html;
+}
+
+async function createJobsList() {
+
+    const list = document.getElementById("jobs-list");
+    if(!list) return;
+
+    const data = translations['work-experiences']["jobs"];
+
+    const html = data.map((job, index) => {
+
+        return `
+        <li>
+            <h2 data-i18n="work-experiences.jobs.${index}.enterprise"></h2>
+            <h3 data-i18n="work-experiences.jobs.${index}.role"></h3>
+            <p data-i18n="work-experiences.jobs.${index}.summary"></p>
+        </li>`
+
+    }).join('');
+
+    list.innerHTML = html;
+}
+
+async function createDegreesList() {
+
+    const list = document.getElementById("degrees-list");
+    if(!list) return;
+
+    const data = translations['degrees']["degrees"];
+
+    const html = data.map((degree, index) => {
+
+        const aux = (degree.grade) ? `<p data-i18n="degrees.degrees.${index}.grade"></p>` : '';
+
+        return `
+        <li>
+            <h2 data-i18n="degrees.degrees.${index}.title"></h2>
+            <h3 data-i18n="degrees.degrees.${index}.established"></h3>
+            ${aux} 
+        </li>`
+
+    }).join('');
+
+    
+    list.innerHTML = html;
 }

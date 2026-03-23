@@ -1,0 +1,15 @@
+{
+    "title" : "Titolo di studi e Certificati",
+    "degrees" : 
+    [
+        {
+            "title" : "Diploma di scuola superiore",
+            "established" : "IIS Marconi Pieralisi",
+            "grade" : "91 / 100"
+        },
+        {
+            "title" : "Corso Hackton",
+            "established" : "IIS Marconi Pieralisi"
+        }
+    ]
+}
