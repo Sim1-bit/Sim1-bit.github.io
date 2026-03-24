@@ -1,6 +1,6 @@
 async function createPage() {
     await createHardSkillsList();
-    await createSoftSkillsList();
+    //await createSoftSkillsList();
 
     await createJobsList();
 
@@ -18,10 +18,10 @@ async function createHardSkillsList(){
 
         return `
         <div>
-        <h3 data-i18n="skills.hard-skills.categories.${index}.category"></h3>
-        <ul>
-            ${category.list.map((element, ind) => `<li data-i18n="skills.hard-skills.categories.${index}.list.${ind}"></li>`).join('')}
-        </ul>
+            <h3 data-i18n="skills.hard-skills.categories.${index}.category"></h3>
+            <ul>
+                ${category.list.map((element, ind) => `<li data-i18n="skills.hard-skills.categories.${index}.list.${ind}"></li>`).join('')}
+            </ul>
         </div>`
 
     }).join('');
@@ -40,12 +40,12 @@ async function createSoftSkillsList(){
 
         return `
         <div>
-        <h3 data-i18n="skills.soft-skills.categories.${index}.category"></h3>
-        <dl>
-            ${category.list.map((element, ind) => `
-                <dt data-i18n="skills.soft-skills.categories.${index}.list.${ind}.name"></dt>
-                <dd data-i18n="skills.soft-skills.categories.${index}.list.${ind}.example"></dd>`).join('')}
-        </dl>
+            <h3 data-i18n="skills.soft-skills.categories.${index}.category"></h3>
+            <dl>
+                ${category.list.map((element, ind) => `
+                    <dt data-i18n="skills.soft-skills.categories.${index}.list.${ind}.name"></dt>
+                    <dd data-i18n="skills.soft-skills.categories.${index}.list.${ind}.example"></dd>`).join('')}
+            </dl>
         </div>`
 
     }).join('');

@@ -14,7 +14,8 @@
                     "php",
                     "Javascript",
                     "Astro",
-                    "Flutter"
+                    "Flutter",
+                    "SQL"
                 ]
             },
             {
@@ -30,19 +31,11 @@
                 ]   
             },
             {
-                "category" : "Database",
+                "category" : "Tools",
                 "list" :
                 [
-                    "Supabase",
-                    "MongoDB"
-                ]   
-            },
-            {
-                "category" : "Tool",
-                "list" :
-                [
-                    "Supabase",
-                    "MongoDB"
+                    "Git",
+                    "Linear"          
                 ]   
             }
         ]
@@ -99,7 +92,7 @@
                 ]
             },
             {
-                "category" : "Leadership e Teamwork",
+                "category" : "Leadership & Teamwork",
                 "list" :
                 [
                     {
