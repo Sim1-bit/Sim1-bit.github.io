@@ -89,7 +89,7 @@ header ul li span:first-child {
 }
 
 /* --- Divisori di Sezione (Linee Nere) --- */
-#header > div, #skills, #work-experiences, #degrees {
+#header > div, #skills, #work-experiences, #degrees, #languages {
     border-top: 2px solid black;
     margin-top: 20px;
     padding-top: 20px;
@@ -121,7 +121,7 @@ ul, ol, #list-hard, #list-soft {
     margin: 0;
 }
 
-/* Sottotitoli (lista 1, work 1, diploma) */
+/* Sottotitoli */
 h2[data-i18n*=".enterprise"], 
 h2[data-i18n*=".title"], 
 h3[data-i18n*=".category"] {
@@ -131,8 +131,9 @@ h3[data-i18n*=".category"] {
 }
 
 /* Dettagli (ruolo, istituzione, punto 1) */
-h3[data-i18n*=".role"], 
-h3[data-i18n*=".established"], 
+h3[data-i18n*=".role"],
+h3[data-i18n*=".established"],
+p[data-i18n*=".level"],
 #list-hard li {
     font-size: 0.95rem;
     margin-left: 20px;
@@ -140,7 +141,8 @@ h3[data-i18n*=".established"],
 }
 
 /* Descrizioni e Gradi */
-p[data-i18n*=".summary"], 
+p[data-i18n*=".summary"],
+span[data-i18n*=".period"], 
 p[data-i18n*=".grade"], 
 dd {
     font-size: 0.9rem;

@@ -3,6 +3,7 @@ async function loadAllComponents() {
   await loadComponent("skills", "assets/components/skills.html");
   await loadComponent("work-experiences", "assets/components/work-experiences.html");
   await loadComponent("degrees", "assets/components/degrees.html");
+  await loadComponent("languages", "assets/components/languages.html")
 
   await createPage();
 

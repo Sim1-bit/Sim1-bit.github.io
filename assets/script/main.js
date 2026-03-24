@@ -5,6 +5,8 @@ async function createPage() {
     await createJobsList();
 
     await createDegreesList();
+
+    await createLanguagesList();
 }
 
 async function createHardSkillsList(){
@@ -14,13 +16,13 @@ async function createHardSkillsList(){
 
     const data = translations['skills']["hard-skills"]["categories"];
 
-    const html = data.map((category, index) => {
+    const html = data.map((element, index) => {
 
         return `
         <div>
             <h3 data-i18n="skills.hard-skills.categories.${index}.category"></h3>
             <ul>
-                ${category.list.map((element, ind) => `<li data-i18n="skills.hard-skills.categories.${index}.list.${ind}"></li>`).join('')}
+                ${element.list.map((el, ind) => `<li data-i18n="skills.hard-skills.categories.${index}.list.${ind}"></li>`).join('')}
             </ul>
         </div>`
 
@@ -36,13 +38,13 @@ async function createSoftSkillsList(){
 
     const data = translations['skills']["soft-skills"]["categories"];
 
-    const html = data.map((category, index) => {
+    const html = data.map((element, index) => {
 
         return `
         <div>
             <h3 data-i18n="skills.soft-skills.categories.${index}.category"></h3>
             <dl>
-                ${category.list.map((element, ind) => `
+                ${element.list.map((el, ind) => `
                     <dt data-i18n="skills.soft-skills.categories.${index}.list.${ind}.name"></dt>
                     <dd data-i18n="skills.soft-skills.categories.${index}.list.${ind}.example"></dd>`).join('')}
             </dl>
@@ -60,13 +62,18 @@ async function createJobsList() {
 
     const data = translations['work-experiences']["jobs"];
 
-    const html = data.map((job, index) => {
+    const html = data.map((element, index) => {
 
         return `
         <li>
             <h2 data-i18n="work-experiences.jobs.${index}.enterprise"></h2>
+            <p data-i18n="work-experiences.jobs.${index}.description"></p>
             <h3 data-i18n="work-experiences.jobs.${index}.role"></h3>
+            <b> 
+                <span data-i18n="work-experiences.jobs.${index}.period"></span>
+            </b>
             <p data-i18n="work-experiences.jobs.${index}.summary"></p>
+            
         </li>`
 
     }).join('');
@@ -79,17 +86,38 @@ async function createDegreesList() {
     const list = document.getElementById("degrees-list");
     if(!list) return;
 
-    const data = translations['degrees']["degrees"];
+    const data = translations['degrees']["list"];
 
-    const html = data.map((degree, index) => {
+    const html = data.map((element, index) => {
 
-        const aux = (degree.grade) ? `<p data-i18n="degrees.degrees.${index}.grade"></p>` : '';
+        const aux = (element.grade) ? `<p data-i18n="degrees.list.${index}.grade"></p>` : '';
 
         return `
         <li>
-            <h2 data-i18n="degrees.degrees.${index}.title"></h2>
-            <h3 data-i18n="degrees.degrees.${index}.established"></h3>
+            <h2 data-i18n="degrees.list.${index}.title"></h2>
+            <h3 data-i18n="degrees.list.${index}.established"></h3>
             ${aux} 
+        </li>`
+
+    }).join('');
+
+    
+    list.innerHTML = html;
+}
+
+async function createLanguagesList() {
+
+    const list = document.getElementById("languages-list");
+    if(!list) return;
+
+    const data = translations['languages']["list"];
+
+    const html = data.map((element, index) => {
+
+        return `
+        <li>
+            <h3 data-i18n="languages.list.${index}.language"></h3>
+            <p data-i18n="languages.list.${index}.level"></p> 
         </li>`
 
     }).join('');
