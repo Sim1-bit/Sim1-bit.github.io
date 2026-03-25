@@ -1,0 +1,39 @@
+{
+    "title": "Competenze Tecniche",
+    "description" : "",
+    "categories" : 
+    [
+        {
+            "category" : "Linguaggi di Programmazione",
+            "list" :
+            [
+                "C#",
+                "PHP",
+                "JavaScript",
+                "Astro",
+                "Flutter",
+                "SQL"
+            ]
+        },
+        {
+            "category" : "Framework & Ambienti di sviluppo",
+            "list" :
+            [
+                "Visual Studio Code",
+                "Visual Studio",
+                "Unreal Engine",
+                "Node.js",
+                "Firebase",
+                "Strapi (Javascript)"
+            ]   
+        },
+        {
+            "category" : "Tools",
+            "list" :
+            [
+                "Git",
+                "Linear"          
+            ]   
+        }
+    ]
+}

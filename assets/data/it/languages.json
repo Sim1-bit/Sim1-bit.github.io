@@ -1,0 +1,16 @@
+{
+    "title" : "Lingue Conosciute",
+    "list" :
+    [
+        {
+            "language" : "Inglese",
+            "level" : "Livello: B2. Competenze acquisite in ambito scolastico e consolidate durante l'esperienza Erasmus; buona capacità di ascolto e lettura.",
+            "acronym" : "en"
+        },
+        {
+            "language" : "Spagnolo",
+            "level" : "Appreso durante l'esperienza Erasmus (particolarmente durante il secondo periodo grazie all'interazione con i colleghi), con focus sulla comunicazione quotidiana.",
+            "acronym" : "es"
+        }
+    ]
+}

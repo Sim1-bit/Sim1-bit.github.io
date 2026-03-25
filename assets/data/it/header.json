@@ -1,0 +1,21 @@
+{
+    "title" : "Curriculum",
+    "sub-title" : "VITAE",
+    "name" : "Simone Giorgini",
+    "professional-title" : "Software Developer",
+    "professional-sub-title" : "Sviluppatore Software con particolare interesse per il Backend",
+    "professional-profile" : 
+        "Sviluppatore software diplomato nel 2025 presso l'IIS Marconi Pieralisi di Jesi. Dopo il diploma, ho avuto la possibilità di partecipare a due progetti Erasmus in Spagna presso la startup Fenles. Questa esperienza mi ha permesso di maturare autonomia tecnica nel backend e capacità di adattamento in team multiculturali. Mi considero una persona curiosa e concreta, orientata alla risoluzione di problemi e desiderosa di mettere le mie competenze al servizio di contesti dinamici.",
+    "email-title": "Email",
+    "email" : "simonegiorgini134@gmail.com",
+    "phone-number-title": "Num. telefonico",
+    "phone-number" : "370 318 0061",
+    "portfolio-title" : "GitHub",
+    "portfolio" : "https://github.com/Sim1-bit",
+    "website-title" : "Sito Web",
+    "website" : "sim1-bit.github.io",
+    "date-title" : "Data di nascita",
+    "date" : "23 aprile 2006",
+    "nationality-title" : "Nazionalità",
+    "nationality" : "Italiana"
+}

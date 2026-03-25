@@ -1,0 +1,20 @@
+{
+    "title" : "Esperienze Professionali",
+    "jobs" :
+    [
+        {
+            "enterprise" : "FENLES",
+            "description": "Piattaforma digitale (web e mobile) per la gestione e vendita di biglietti per eventi e creazione di menù digitali per ristoranti nelle città di Barcellona e Badajoz.",
+            "role" : "Full Stack Developer & Tecnico del suono",
+            "period" : "16 settembre - 10 dicembre & 20 gennaio - 19 marzo",
+            "summary" : "Sviluppo backend della piattaforma implementando nuove funzionalità e ottimizzando quelle esistenti per garantire risultati più coerenti.\nCollaborazione tecnica nell'allestimento audio (altoparlanti, mixer, microfoni e strumenti musicali) per eventi in collaborazione con l'Ayuntamiento de Barcelona"
+        },
+        {
+            "enterprise" : "Plus Service",
+            "description": "Azienda leader in Italia nello sviluppo di sistemi ERP e soluzioni software integrate per il settore della mobilità e del trasporto passeggeri.",
+            "role" : "Sistemista di Rete (PCTO)",
+            "period" : "Periodo di PCTO",
+            "summary" : "Durante il periodo mi sono dedicato alla creazione e configurazione di una rete di macchine virtuali (client e server) per lo sviluppo di un applicativo che potesse sfruttarla. Il progetto ha previsto l'implementazione del gioco del Tris con un software dedicato per il server e uno per il client così da permettere a più giocatori di giocare in contemporanea."
+        }
+    ]  
+}

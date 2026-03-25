@@ -1,0 +1,254 @@
+/* --- Reset e Layout Base --- */
+body {
+    font-family: 'Inter', Arial, sans-serif; /* Un sans-serif moderno e pulito */
+    color: #000;
+    background-color: #fff;
+    line-height: 1.2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* --- Il Titolo "Curriculum VITAE" con linee laterali --- */
+header h1[data-i18n="header.title"], 
+header h2[data-i18n="header.sub-title"] {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+header h1[data-i18n="header.title"] {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* Crea le linee orizzontali ai lati di "Curriculum" */
+header h1[data-i18n="header.title"]::before,
+header h1[data-i18n="header.title"]::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: black;
+    margin: 0 15px;
+}
+
+header h2[data-i18n="header.sub-title"] {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+/* --- Header: Nome vs Contatti (Table) --- */
+header table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    table-layout: fixed;
+}
+
+header td {
+    vertical-align: top;
+    padding: 10px 0;
+}
+
+/* Nome e Lavoro (Sinistra) */
+header h1[data-i18n="header.name"] {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+header h3[data-i18n="header.professional-title"] {
+    font-size: 1.1rem;
+    margin: 5px 0 0 0;
+}
+
+header p[data-i18n="header.professional-sub-title"] {
+    font-size: 0.8rem;
+    margin: 2px 0;
+}
+
+/* Contatti (Destra) */
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+header ul li {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+}
+
+header ul li span:first-child {
+    font-weight: bold;
+}
+
+/* --- Divisori di Sezione (Linee Nere) --- */
+#header > div, #hard-skills, #soft-skills, #work-experiences, #degrees, #languages {
+    border-top: 2px solid black;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+/* Sezione "Chi sono" */
+#header > div {
+    text-align: justify;
+    font-size: 0.9rem;
+    padding-bottom: 0.1px;
+}
+
+/* --- Titoli dei components --- */
+h1[data-i18n$=".title"] {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    text-transform: none;
+}
+
+#hard-skills h2 {
+    font-size: 1.25rem;
+}
+
+#soft-skills h2 {
+    font-size: 1.25rem;
+}
+
+/* --- Liste dei component --- */
+ul, ol, #list-hard, #list-soft {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sottotitoli */
+h2[data-i18n*=".enterprise"], 
+h2[data-i18n*=".title"], 
+h3[data-i18n*=".category"] {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px 0 2px 0;
+}
+
+/* Dettagli (ruolo, istituzione, punto 1) */
+h3[data-i18n*=".role"],
+h3[data-i18n*=".established"],
+p[data-i18n*=".level"],
+p[data-i18n*=".description"],
+#list-hard li {
+    font-size: 0.95rem;
+    margin-left: 20px;
+    font-weight: normal;
+}
+
+/* Descrizioni e Gradi */
+p[data-i18n*=".summary"],
+span[data-i18n*=".period"], 
+p[data-i18n*=".grade"], 
+dd {
+    font-size: 0.9rem;
+    margin: 2px 0 10px 30px;
+    color: #333;
+}
+
+/* Correzione per il tag personalizzato <il> che usi nel JS */
+#list-hard, #list-soft {
+    display: block;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+    header table, header tr, header td {
+        display: block;
+        width: 100%;
+        text-align: center !important;
+    }
+    header ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+/* --- Allineamento Orizzontale delle Categorie --- */
+
+/* Contenitore principale (l'elemento <il> nel tuo HTML) */
+#list-hard, #list-soft {
+    display: flex;         /* Allinea i div delle categorie in orizzontale */
+    flex-wrap: wrap;       /* Se non c'è spazio, manda la categoria a capo */
+    gap: 20px;             /* Spazio tra una colonna e l'altra */
+    padding: 0;
+    margin-top: 10px;
+}
+
+/* Ogni singolo blocco categoria (Linguaggi, Framework, ecc.) */
+#list-hard > div {
+    flex: 0 1 auto;        /* La larghezza si adatta al contenuto 0 1 auto;*/
+    min-width: 150px;      /* Larghezza minima per evitare che siano troppo strette */
+}
+
+#list-soft > div {
+    flex: 1 1 20%;        /* La larghezza si adatta al contenuto 0 1 auto;*/
+    min-width: 180px;      /* Larghezza minima per evitare che siano troppo strette */
+}
+
+/* Titolo della categoria (es. Linguaggi di Programmazione) */
+#list-hard h3, #list-soft h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black; /* Sottile linea sotto il titolo della categoria */
+    padding-bottom: 5px;
+}
+
+/* Lista degli elementi (C#, C++, ecc.) - Tornano in verticale */
+#list-hard ul, #list-soft dl {
+    list-style: none;
+    padding-left: 10px;    /* Leggero rientro come nel disegno */
+    margin: 0;
+}
+
+#list-hard li {
+    font-size: 0.80rem;
+    margin-bottom: 5px;
+    display: block;        /* Forza ogni elemento su una nuova riga */
+}
+
+/* Stile per le Soft Skills (che usano <dt> e <dd>) */
+dt {
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+dd {
+    font-size: 0.85rem;
+    margin-left: 0;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+@media print {
+    /* Forza l'inizio delle Esperienze Professionali su una nuova pagina */
+    h1[data-i18n="work-experiences.title"] {
+        break-before: page;
+        page-break-before: always;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    @page {
+        /* Riduce i margini fisici della pagina PDF */
+        margin: 1.5cm; 
+    }
+
+    body {
+        /* Rimuove eventuali padding del body che restringono il testo */
+        padding: 0;
+        margin: 0;
+        max-width: 100%; /* Permette al testo di usare tutta la larghezza */
+    }
+}
