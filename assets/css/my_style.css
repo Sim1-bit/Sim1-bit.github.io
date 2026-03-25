@@ -89,7 +89,7 @@ header ul li span:first-child {
 }
 
 /* --- Divisori di Sezione (Linee Nere) --- */
-#header > div, #skills, #work-experiences, #degrees, #languages {
+#header > div, #hard-skills, #soft-skills, #work-experiences, #degrees, #languages {
     border-top: 2px solid black;
     margin-top: 20px;
     padding-top: 20px;
@@ -110,7 +110,11 @@ h1[data-i18n$=".title"] {
     text-transform: none;
 }
 
-#skills h2 {
+#hard-skills h2 {
+    font-size: 1.25rem;
+}
+
+#soft-skills h2 {
     font-size: 1.25rem;
 }
 
@@ -134,6 +138,7 @@ h3[data-i18n*=".category"] {
 h3[data-i18n*=".role"],
 h3[data-i18n*=".established"],
 p[data-i18n*=".level"],
+p[data-i18n*=".description"],
 #list-hard li {
     font-size: 0.95rem;
     margin-left: 20px;

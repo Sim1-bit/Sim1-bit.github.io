@@ -1,0 +1,68 @@
+
+{
+    "title" : "Soft skills",
+    "description" : "",
+    "categories" :
+    [
+        {
+            "category" : "Comunication & Relationships",
+            "list" :
+            [
+                {
+                    "name" : "Active Listening",
+                    "example" : "Essenziale per comprendere i requisiti tecnici e le direttive da parte dei superiori durante lo sviluppo del backend di Fenles."
+                },
+                {
+                    "name" : "Networking",
+                    "example" : "Capacità di integrarsi in un team internazionale e collaborare con colleghi spagnoli in contesti lavorativi dinamici."
+                }
+            ]
+        },
+        {
+            "category" : "Organozation & Productivity",
+            "list" :
+            [
+                {
+                    "name" : "Planning & Organisation",
+                    "example" : "Gestione efficace di incarichi multidisciplinari durante lo stage: sviluppo software alternandolo con gli incarichi derivati da eventi."
+                },
+                {
+                    "name" : "Problem-Solving",
+                    "example" : "Capacità di trasformare sfide tecniche complesse in soluzioni funzionanti, come dimostrato nello sviluppo di applicativi multiplayer e sistemi di rete."
+                }
+            ]
+        },
+        {
+            "category" : "Adaptability & Attitude",
+            "list" :
+            [
+                {
+                    "name" : "Flexibility",
+                    "example" : "Capacità di adattamento rapido a nuove tecnologie (Astro, Strapi e Astro) e a diversi ambienti di lavoro."
+                },
+                {
+                    "name" : "Lifelong learning",
+                    "example" : "Approccio proattivo nello studio di nuovi linguaggi e framework per rispondere alle esigenze dei progetti."
+                },
+                {
+                    "name" : "Work ethic",
+                    "example" : "Puntualità e affidabilità dimostrate sia nei progetti scolastici che nelle esperienze lavorative all'estero."
+                }
+            ]
+        },
+        {
+            "category" : "Leadership & Teamwork",
+            "list" :
+            [
+                {
+                    "name" : "Mentoring",
+                    "example" : "Responsabile, insieme a una collega, dell'affiancamento e dell'integrazione di nuovi stagisti durante il secondo periodo a Barcellona."
+                },
+                {
+                    "name" : "Autonomy",
+                    "example" : "Sviluppo indipendente di applicativi software (come il gioco del Tris multiplayer) partendo dalla progettazione della rete."
+                }
+            ]
+        }
+    ]
+}

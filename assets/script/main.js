@@ -1,6 +1,6 @@
 async function createPage() {
     await createHardSkillsList();
-    //await createSoftSkillsList();
+    await createSoftSkillsList();
 
     await createJobsList();
 
@@ -14,15 +14,15 @@ async function createHardSkillsList(){
     const list = document.getElementById("list-hard");
     if(!list) return;
 
-    const data = translations['skills']["hard-skills"]["categories"];
+    const data = translations["hard-skills"]["categories"];
 
     const html = data.map((element, index) => {
 
         return `
         <div>
-            <h3 data-i18n="skills.hard-skills.categories.${index}.category"></h3>
+            <h3 data-i18n="hard-skills.categories.${index}.category"></h3>
             <ul>
-                ${element.list.map((el, ind) => `<li data-i18n="skills.hard-skills.categories.${index}.list.${ind}"></li>`).join('')}
+                ${element.list.map((el, ind) => `<li data-i18n="hard-skills.categories.${index}.list.${ind}"></li>`).join('')}
             </ul>
         </div>`
 
@@ -36,17 +36,17 @@ async function createSoftSkillsList(){
     const list = document.getElementById("list-soft");
     if(!list) return;
 
-    const data = translations['skills']["soft-skills"]["categories"];
+    const data = translations["soft-skills"]["categories"];
 
     const html = data.map((element, index) => {
 
         return `
         <div>
-            <h3 data-i18n="skills.soft-skills.categories.${index}.category"></h3>
+            <h3 data-i18n="soft-skills.categories.${index}.category"></h3>
             <dl>
                 ${element.list.map((el, ind) => `
-                    <dt data-i18n="skills.soft-skills.categories.${index}.list.${ind}.name"></dt>
-                    <dd data-i18n="skills.soft-skills.categories.${index}.list.${ind}.example"></dd>`).join('')}
+                    <dt data-i18n="soft-skills.categories.${index}.list.${ind}.name"></dt>
+                    <dd data-i18n="soft-skills.categories.${index}.list.${ind}.example"></dd>`).join('')}
             </dl>
         </div>`
 
@@ -90,13 +90,15 @@ async function createDegreesList() {
 
     const html = data.map((element, index) => {
 
-        const aux = (element.grade) ? `<p data-i18n="degrees.list.${index}.grade"></p>` : '';
+        const grade = (element.grade) ? `<p data-i18n="degrees.list.${index}.grade"></p>` : '';
+        const established = (element.established) ? `<h3 data-i18n="degrees.list.${index}.established"></h3>` : "";
 
         return `
         <li>
             <h2 data-i18n="degrees.list.${index}.title"></h2>
-            <h3 data-i18n="degrees.list.${index}.established"></h3>
-            ${aux} 
+            ${established}
+            <p data-i18n="degrees.list.${index}.description"></p>
+            ${grade}
         </li>`
 
     }).join('');

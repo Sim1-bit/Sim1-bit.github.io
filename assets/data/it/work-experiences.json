@@ -1,20 +1,20 @@
 {
-    "title" : "Esperienze di lavoro",
+    "title" : "Esperienze Professionali",
     "jobs" :
     [
         {
             "enterprise" : "FENLES",
-            "description": "Piattaforma digitale (web e mobile) per la gestione e vendita di biglietti per eventi (concerti, spettacoli teatrali, feste) e per la creazione di menù digitali per ristoranti nelle città di Barcellona e Badajoz.",
-            "role" : "Full Stack Developer, Tecnico del suono",
+            "description": "Piattaforma digitale (web e mobile) per la gestione e vendita di biglietti per eventi e creazione di menù digitali per ristoranti nelle città di Barcellona e Badajoz.",
+            "role" : "Full Stack Developer & Tecnico del suono",
             "period" : "16 settembre - 10 dicembre & 20 gennaio - 19 marzo",
-            "summary" : "Sviluppo backend della piattaforma aggiungendo funzionalità o miglioramenti di esse per ottenere dei risultati più coerenti.\nAiuto nel posizionamento e collegamento di altoparlanti, mixer, microfoni e strumenti musicali per eventi in collaborazione con l'Ayuntamiento de Barcelona"
+            "summary" : "Sviluppo backend della piattaforma aggiungendo funzionalità o miglioramenti di esse per l'ottenimento di risultati più coerenti.\nCollaborazione tecnica nell'allestimento audio (altoparlanti, mixer, microfoni e strumenti musicali) per eventi in collaborazione con l'Ayuntamiento de Barcelona"
         },
         {
             "enterprise" : "Plus Service",
-            "description": "Piattaforma digitale (web e mobile) per la gestione e vendita di biglietti per eventi (concerti, spettacoli teatrali, feste) e per la creazione di menù digitali per ristoranti nelle città di Barcellona e Badajoz.",
-            "role" : "Sistemista di Rete",
-            "period" : "16 settembre - 10 dicembre & 20 gennaio - 19 marzo",
-            "summary" : "Riassunto/descrizione"
+            "description": "Azienda leader in Italia nello sviluppo di sistemi ERP e soluzioni software integrate per il settore della mobilità e del trasporto passeggeri.",
+            "role" : "Sistemista di Rete (PCTO)",
+            "period" : "Periodo di PCTO",
+            "summary" : "Durante il periodo mi sono dedicato alla creazione di macchine virtuali per server e computer, per poi dedicarmi all'apprendimento e alla creazione di software che sfruttassero la rete di macchine da me creata come il gioco Tris che funzionasse in rete locale."
         }
     ]  
 }

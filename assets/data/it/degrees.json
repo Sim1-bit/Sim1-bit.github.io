@@ -1,15 +1,20 @@
 {
-    "title" : "Titolo di studi e Certificati",
+    "title" : "Titolo di studi e Certificazioni",
     "list" : 
     [
         {
-            "title" : "Diploma di scuola superiore",
+            "title" : "Diploma di scuola superiore - Indirizzo Informatico",
             "established" : "IIS Marconi Pieralisi",
-            "grade" : "91 / 100"
+            "description" : "Formazione focalizzata su sviluppo software, database e reti.",
+            "grade" : "Voto all'esame: 91 / 100"
         },
         {
-            "title" : "Corso Hackton",
-            "established" : "IIS Marconi Pieralisi"
+            "title" : "Attestato di Frequenza e Partecipazione \"Didattica Immersiva ed_2\"",
+            "description" : "Corso focalizzato sullo sviluppo di applicativi per Realtà Virtuale e Aumentata tramite l'uso di Unreal Engine."
+        },
+        {
+            "title" : "Attestato di Frequenza e Partecipazione \"Hackathon - Computer Graphics ed_1\"",
+            "description" : "Corso in preparazione a un hackathon regionale (tenutosi presso l'istituto Volterra-Elia di Torrette), a cui ho partecipato in veste di Full Stack Developer."
         }
     ]
 }
