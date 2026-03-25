@@ -3,11 +3,6 @@
     "list" :
     [
         {
-            "language" : "Italiano",
-            "level" : "Madre lingua.",
-            "acronym" : "it"
-        },
-        {
             "language" : "Inglese",
             "level" : "Livello: B2. Competenze acquisite in ambito scolastico e consolidate durante l'esperienza Erasmus; buona capacità di ascolto e lettura.",
             "acronym" : "en"

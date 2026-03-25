@@ -1,11 +1,11 @@
 
 {
-    "title" : "Soft skills",
+    "title" : "Core skills",
     "description" : "",
     "categories" :
     [
         {
-            "category" : "Comunication & Relationships",
+            "category" : "Communication & Relationships",
             "list" :
             [
                 {
@@ -19,7 +19,7 @@
             ]
         },
         {
-            "category" : "Organozation & Productivity",
+            "category" : "Organization & Productivity",
             "list" :
             [
                 {
@@ -38,11 +38,7 @@
             [
                 {
                     "name" : "Flexibility",
-                    "example" : "Capacità di adattamento rapido a nuove tecnologie (Astro, Strapi e Astro) e a diversi ambienti di lavoro."
-                },
-                {
-                    "name" : "Lifelong learning",
-                    "example" : "Approccio proattivo nello studio di nuovi linguaggi e framework per rispondere alle esigenze dei progetti."
+                    "example" : "Capacità di adattamento rapido a nuove tecnologie (Astro, Strapi e Flutter) e a diversi ambienti di lavoro."
                 },
                 {
                     "name" : "Work ethic",

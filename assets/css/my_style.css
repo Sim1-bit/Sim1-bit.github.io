@@ -91,8 +91,8 @@ header ul li span:first-child {
 /* --- Divisori di Sezione (Linee Nere) --- */
 #header > div, #hard-skills, #soft-skills, #work-experiences, #degrees, #languages {
     border-top: 2px solid black;
-    margin-top: 20px;
-    padding-top: 20px;
+    margin-top: 15px;
+    padding-top: 10px;
 }
 
 /* Sezione "Chi sono" */
@@ -131,7 +131,7 @@ h2[data-i18n*=".title"],
 h3[data-i18n*=".category"] {
     font-size: 1.1rem;
     font-weight: bold;
-    margin: 15px 0 5px 0;
+    margin: 10px 0 2px 0;
 }
 
 /* Dettagli (ruolo, istituzione, punto 1) */
@@ -151,7 +151,7 @@ span[data-i18n*=".period"],
 p[data-i18n*=".grade"], 
 dd {
     font-size: 0.9rem;
-    margin: 5px 0 20px 40px;
+    margin: 2px 0 10px 30px;
     color: #333;
 }
 
@@ -178,22 +178,27 @@ dd {
 #list-hard, #list-soft {
     display: flex;         /* Allinea i div delle categorie in orizzontale */
     flex-wrap: wrap;       /* Se non c'è spazio, manda la categoria a capo */
-    gap: 50px;             /* Spazio tra una colonna e l'altra */
+    gap: 20px;             /* Spazio tra una colonna e l'altra */
     padding: 0;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /* Ogni singolo blocco categoria (Linguaggi, Framework, ecc.) */
-#list-hard > div, #list-soft > div {
-    flex: 0 1 auto;        /* La larghezza si adatta al contenuto */
+#list-hard > div {
+    flex: 0 1 auto;        /* La larghezza si adatta al contenuto 0 1 auto;*/
     min-width: 150px;      /* Larghezza minima per evitare che siano troppo strette */
+}
+
+#list-soft > div {
+    flex: 1 1 20%;        /* La larghezza si adatta al contenuto 0 1 auto;*/
+    min-width: 180px;      /* Larghezza minima per evitare che siano troppo strette */
 }
 
 /* Titolo della categoria (es. Linguaggi di Programmazione) */
 #list-hard h3, #list-soft h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-transform: uppercase;
     border-bottom: 1px solid black; /* Sottile linea sotto il titolo della categoria */
     padding-bottom: 5px;
@@ -224,4 +229,26 @@ dd {
     margin-left: 0;
     color: #444;
     margin-bottom: 5px;
+}
+
+@media print {
+    /* Forza l'inizio delle Esperienze Professionali su una nuova pagina */
+    h1[data-i18n="work-experiences.title"] {
+        break-before: page;
+        page-break-before: always;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    @page {
+        /* Riduce i margini fisici della pagina PDF */
+        margin: 1.5cm; 
+    }
+
+    body {
+        /* Rimuove eventuali padding del body che restringono il testo */
+        padding: 0;
+        margin: 0;
+        max-width: 100%; /* Permette al testo di usare tutta la larghezza */
+    }
 }

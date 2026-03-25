@@ -8,23 +8,22 @@
             "list" :
             [
                 "C#",
-                "C++",
-                "php",
-                "Javascript",
+                "PHP",
+                "JavaScript",
                 "Astro",
                 "Flutter",
                 "SQL"
             ]
         },
         {
-            "category" : "Framework e Ambienti",
+            "category" : "Framework & Ambienti di sviluppo",
             "list" :
             [
                 "Visual Studio Code",
                 "Visual Studio",
                 "Unreal Engine",
                 "Node.js",
-                "Firebase studio",
+                "Firebase",
                 "Strapi (Javascript)"
             ]   
         },

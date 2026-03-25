@@ -5,7 +5,7 @@
     "professional-title" : "Software Developer",
     "professional-sub-title" : "Sviluppatore Software con particolare interesse per il Backend",
     "professional-profile" : 
-        "Sviluppatore software diplomato nel 2025 presso l'IIS Marconi Pieralisi di Jesi. A seguito del diploma, ho trascorso cinque mesi in Spagna grazie a due borse di studio: dal 12 settembre al 12 dicembre 2025 e dal 19 gennaio al 20 marzo 2026. In entrambe le occasioni ho svolto uno stage presso la startup locale Fenles, dove mi sono occupato principalmente del backend della piattaforma e dello sviluppo di alcune componenti frontend.",
+        "Sviluppatore software diplomato nel 2025 presso l'IIS Marconi Pieralisi di Jesi. Dopo il diploma, ho avuto la possibilità di partecipare a due progetti Erasmus in Spagna presso la startup Fenles. Questa esperienza mi ha permesso di maturare autonomia tecnica nel backend e capacità di adattamento in team multiculturali. Mi considero una persona curiosa e concreta, orientata alla risoluzione di problemi e desiderosa di mettere le mie competenze al servizio di contesti dinamici.",
     "email-title": "Email",
     "email" : "simonegiorgini134@gmail.com",
     "phone-number-title": "Num. telefonico",
@@ -13,5 +13,9 @@
     "portfolio-title" : "GitHub",
     "portfolio" : "https://github.com/Sim1-bit",
     "website-title" : "Sito Web",
-    "website" : "sim1-bit.github.io"
+    "website" : "sim1-bit.github.io",
+    "date-title" : "Data di nascita",
+    "date" : "23 aprile 2006",
+    "nationality-title" : "Nazionalità",
+    "nationality" : "Italiana"
 }
