@@ -92,6 +92,7 @@ async function createDegreesList() {
 
         const grade = (element.grade) ? `<p data-i18n="degrees.list.${index}.grade"></p>` : '';
         const established = (element.established) ? `<h3 data-i18n="degrees.list.${index}.established"></h3>` : "";
+        const year = (element.year) ? `<p data-i18n="degrees.list.${index}.year"></p>` : '';
 
         return `
         <li>
@@ -99,6 +100,7 @@ async function createDegreesList() {
             ${established}
             <p data-i18n="degrees.list.${index}.description"></p>
             ${grade}
+            ${year}
         </li>`
 
     }).join('');

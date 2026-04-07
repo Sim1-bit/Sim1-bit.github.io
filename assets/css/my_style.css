@@ -148,7 +148,8 @@ p[data-i18n*=".description"],
 /* Descrizioni e Gradi */
 p[data-i18n*=".summary"],
 span[data-i18n*=".period"], 
-p[data-i18n*=".grade"], 
+p[data-i18n*=".grade"],
+p[data-i18n*=".year"],
 dd {
     font-size: 0.9rem;
     margin: 2px 0 10px 30px;
