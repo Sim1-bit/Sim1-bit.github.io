@@ -11,6 +11,8 @@ async function loadLanguage(lang) {
 
       translations[comp] = data;
   }
+
+  applyTranslations();
 }
 
 
